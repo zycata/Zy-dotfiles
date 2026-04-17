@@ -8,4 +8,5 @@
 
 # allowed folders
 !/nvim/**
+!/nvim-personal/**
 !/fastfetch/**
