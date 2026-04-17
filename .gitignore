@@ -1,11 +1,10 @@
-# Ignore everything
+# Ignore all files by default but decent into subfolders
 *
+!*/
 
-# Allow the .gitignore
+# allowed files in root (~/.config/)
 !.gitignore
 
-# Allowed folders
-!nvim/
-!fastfetch/
-
-
+# allowed folders
+!/nvim/**
+!/fastfetch/**
