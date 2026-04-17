@@ -2,8 +2,9 @@
 *
 !*/
 
-# allowed files in root (~/.config/)
+# git + github files
 !.gitignore
+!/.github/**
 
 # allowed folders
 !/nvim/**
