@@ -35,7 +35,7 @@ return {
     opts = {
       dashboard = {
         preset = {
-          header = table.concat(get_header_from_file "header.txt", "\n"),
+          header = table.concat(get_header_from_file("header.txt"), "\n")
         },
       },
     },
