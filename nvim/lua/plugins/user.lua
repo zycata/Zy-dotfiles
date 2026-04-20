@@ -1,4 +1,4 @@
-if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
+-- if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 
 -- You can also add or configure plugins by creating files in this `plugins/` folder
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
@@ -35,7 +35,7 @@ return {
     opts = {
       dashboard = {
         preset = {
-          header = get_header_from_file "header.txt",
+          header = table.concat(get_header_from_file "header.txt", "\n"),
         },
       },
     },
@@ -46,7 +46,7 @@ return {
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
-    "L3MON4D3mLuaSnip",
+    "L3MON4D3m/LuaSnip",
     config = function(plugin, opts)
       -- add more custom luasnip configuration such as filetype extend or custom snippets
       local luasnip = require "luasnip"
