@@ -4,6 +4,17 @@ if true then return {} end -- WARN: REMOVE THIS LINE TO ACTIVATE THIS FILE
 -- PLEASE REMOVE THE EXAMPLES YOU HAVE NO INTEREST IN BEFORE ENABLING THIS FILE
 -- Here are some examples:
 
+local function get_header_from_file(filename)
+  -- stdpath("config") points to your ~/.config/nvim folder
+  local path = vim.fn.stdpath "config" .. "/" .. filename
+
+  -- Check if file exists so Neovim doesn't crash if you delete it
+  if vim.fn.filereadable(path) == 1 then return vim.fn.readfile(path) end
+
+  -- Fallback if the file is missing
+  return { "Header file not found at " .. path }
+end
+
 ---@type LazySpec
 return {
 
@@ -24,19 +35,7 @@ return {
     opts = {
       dashboard = {
         preset = {
-          header = table.concat({
-            " █████  ███████ ████████ ██████   ██████ ",
-            "██   ██ ██         ██    ██   ██ ██    ██",
-            "███████ ███████    ██    ██████  ██    ██",
-            "██   ██      ██    ██    ██   ██ ██    ██",
-            "██   ██ ███████    ██    ██   ██  ██████ ",
-            "",
-            "███    ██ ██    ██ ██ ███    ███",
-            "████   ██ ██    ██ ██ ████  ████",
-            "██ ██  ██ ██    ██ ██ ██ ████ ██",
-            "██  ██ ██  ██  ██  ██ ██  ██  ██",
-            "██   ████   ████   ██ ██      ██",
-          }, "\n"),
+          header = get_header_from_file "header.txt",
         },
       },
     },
@@ -47,7 +46,7 @@ return {
 
   -- You can also easily customize additional setup of plugins that is outside of the plugin's setup call
   {
-    "L3MON4D3/LuaSnip",
+    "L3MON4D3mLuaSnip",
     config = function(plugin, opts)
       -- add more custom luasnip configuration such as filetype extend or custom snippets
       local luasnip = require "luasnip"
