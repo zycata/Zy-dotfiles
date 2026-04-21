@@ -4,10 +4,12 @@
 
 # git + github files
 !.gitignore
+!.gitattributes
 !/.github/**
 
 # allowed folders
 !/nvim/**
+!/nvim.astro.bak/** 
 !/nvim-personal/**
 !/fastfetch/**
 !/kitty/**
