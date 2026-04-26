@@ -50,7 +50,7 @@
     },
     {
       "type": "memory",
-      "key": "ram",
+      "key": "Ram",
       "keyColor": "#A6E3A1",
       "format": "{used} / {total} ({percentage})"
     },
