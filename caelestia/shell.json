@@ -647,7 +647,7 @@
         "commands": {
             "hibernate": [
                 "systemctl",
-                "hibernate"
+                "suspend"
             ],
             "logout": [
                 "hyprctl",
