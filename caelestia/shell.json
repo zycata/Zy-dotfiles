@@ -396,19 +396,19 @@
             "timeouts": [
                 {
                     "idleAction": "lock",
-                    "timeout": 180
+                    "timeout": 300
                 },
                 {
                     "idleAction": "dpms off",
                     "returnAction": "dpms on",
-                    "timeout": 300
+                    "timeout": 600
                 },
                 {
                     "idleAction": [
                         "systemctl",
                         "suspend-then-hibernate"
                     ],
-                    "timeout": 600
+                    "timeout": 900
                 }
             ]
         },
@@ -625,7 +625,7 @@
     },
     "services": {
         "audioIncrement": 0.05,
-        "brightnessIncrement": 0.1,
+        "brightnessIncrement": 0.05,
         "defaultPlayer": "Spotify",
         "gpuType": "",
         "lyricsBackend": "Auto",

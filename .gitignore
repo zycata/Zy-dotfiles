@@ -16,7 +16,8 @@
 
 !/caelestia/**
 
+!chrome-flags.conf
 
 
-
-
+# spotify
+# spicetify
