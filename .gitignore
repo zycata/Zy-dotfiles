@@ -15,6 +15,7 @@
 !/kitty/**
 
 !/hypr/**
+!/hypr.back/**
 !/caelestia/**
 
 !chrome-flags.conf
