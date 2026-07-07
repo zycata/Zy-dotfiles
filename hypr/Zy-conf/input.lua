@@ -18,3 +18,8 @@ hl.device({
     name = "compx-2.4g-wireless-receiver",
     sensitivity = -1
 })
+
+hl.device({
+    name = "compx-2.4g-dual-mode-mouse",
+    sensitivity = -1
+})

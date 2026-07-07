@@ -17,22 +17,20 @@ return {
 
 
     -- Window keybinds 
-    kbCloseWindow = "SUPER + Q",
     kbMoveWinToWs = "SUPER + CTRL + SHIFT",
     kbMoveWinToWsGroup = "CTRL + SUPER + ALT",
     kbGoToWs = "SUPER",
     kbGoToWsGroup = "CTRL + SUPER",
-
     kbChangeActiveWinFocus = "SUPER",
     kbMoveWnInWs = "SUPER + SHIFT",
-
+    kbToggleSplit = "SUPER + V",
+    kbCloseWindow = "SUPER + Q",
+    kbToggleFullScreen = "SUPER + F",
     -- startup appliations, order does matter
     startupExecs = {
         "/usr/lib/pam_kwallet_init",
-        "gsettings set org.gnome.desktop.interface gtk-theme 'Breeze-Dark'",
-        "gsettings set org.gnome.desktop.interface color-scheme 'prefer-dark'",
-        "plasma-apply-colorscheme BreezeDark",
-        "hyprpaper"
+        "hyprpaper",
+        "waybar" -- temporary stuff yk yk 
 
     },
 
