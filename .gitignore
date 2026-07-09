@@ -17,7 +17,7 @@
 !/hypr/**
 !/hypr.back/**
 !/caelestia/**
-
+!/quickshell/**
 !chrome-flags.conf
 
 
