@@ -34,6 +34,11 @@ return {
 
     },
 
+    -- screenshotting
+    kbFullScreenShot = "SUPER + PRINT",
+    kbPartialScreenShot = "PRINT",
+    screenShotSaveDirectory = "~/Pictures/Screenshots/",
+
 
     -- hyprland shortcuts 
     kbExitHyprland = "SUPER + M"
