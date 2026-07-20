@@ -29,11 +29,19 @@ return {
     -- startup appliations, order does matter
     startupExecs = {
         "/usr/lib/pam_kwallet_init",
+        "gsettings set org.gnome.desktop.interface color-scheme prefer-dark",
+        "gsettings set org.gnome.desktop.interface gtk-theme breeze-dark",
+        "gsettings set org.gnome.desktop.interface gtk-theme Breeze-Dark",
         "hyprpaper",
         "waybar" -- temporary stuff yk yk 
 
     },
+--[[ 
+exec = gsettings set org.gnome.desktop.interface color-scheme "prefer-dark"   # for GTK4 apps
 
+#for gtk3 apps you need to install adw-gtk3 theme (in arch linux sudo pacman -S adw-gtk-theme)
+exec = gsettings set org.gnome.desktop.interface gtk-theme "adw-gtk3" 
+]]
     -- screenshotting
     kbFullScreenShot = "SUPER + PRINT",
     kbPartialScreenShot = "PRINT",
